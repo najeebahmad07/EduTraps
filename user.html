@@ -4,12 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            color: #333;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 0.8rem;
+          }
+
+          footer .menu-item {
+            text-align: center;
+            cursor: pointer;
+          }
+
+          footer .menu-item i {
+            font-size: 1.5rem;
+            display: block;
+            margin-bottom: 5px;
+          }
+
+          footer .menu-item span {
+            display: block;
+          }
+          a{
+              text-decoration: none;
+              color:black;
+          }
+          a:hover {
+              text-decoration: none;
+          }
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #43cea2, #185a9d);
-            color: #fff;
+            color: #0b0b0b;
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -88,5 +125,23 @@
             <a href="#logout">Log Out</a>
         </div>
     </div>
+    <footer>
+        <div class="menu-item" onclick="navigateTo('home')">
+          <i class="fa fa-home"></i>
+          <a href="index.html"><span>Home</span></a>
+        </div>
+        <div class="menu-item">
+          <i class="fa fa-info-circle"></i>
+          <a href="about.html"><span>About</span></a>
+        </div>
+        <div class="menu-item">
+          <i class="fa fa-envelope"></i>
+          <a href="contact.html"><span>Contact</span></a>
+        </div>
+        <div class="menu-item">
+          <i class="fa fa-user"></i>
+          <a href="user.html"><span>Account</span></a>
+        </div>
+      </footer>
 </body>
 </html>
