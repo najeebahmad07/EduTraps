@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduTraps</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 10px;
+    }
+
+    .search-bar input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      outline: none;
+    }
+
+    nav {
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 15px;
+      margin-bottom: 60px; /* For footer space */
+    }
+
+    .main-content img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 400px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      font-size: 1rem;
+      margin: 5px 0;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #666;
+      height: 80px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.4em;
+    }
+
+    .card button {
+      padding: 8px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+
+    .card button:hover {
+      background-color: #45a049;
+    }
+
+    /* Promotional Banner */
+    .promo-banner {
+      background-color: #e7f7e7;
+      padding: 15px;
+      text-align: center;
+      border-radius: 10px;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 20px 0;
+      color: #4CAF50;
+    }
+
+    /* Footer Menu */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #f8f9fa;
+      color: #333;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+      font-size: 0.8rem;
+    }
+
+    footer .menu-item {
+      text-align: center;
+      cursor: pointer;
+    }
+
+    footer .menu-item i {
+      font-size: 1.5rem;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    footer .menu-item span {
+      display: block;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+  </style>
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-title">EduTraps</div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search courses..." onkeyup="filterCourses()">
+    </div>
+    <nav>☰</nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <img src="https://img.freepik.com/free-vector/flat-background-class-2023-graduation_23-2150291538.jpg?semt=ais_hybrid" alt="Promotional Banner">
+    <h2>Our Popular Courses</h2>
+
+    <div class="main-content">
+
+
+        <div class="cards" id="courseCards">
+            <!-- Course 1 -->
+            <div class="card">
+                <img src="images/vlogger.gif" alt="Course 1">
+                <h3>Introduction to Computer Science</h3>
+                <p>Dive into the basics of computer science, covering essential topics like algorithms, data structures, and software development.</p>
+                <a href="Courses/computer.html"><button>Enroll Now</button></a>
+            </div>
+            <!-- Course 2 -->
+            <div class="card">
+                <img src="images/programmer.gif" alt="Course 2">
+                <h3>Web Development Bootcamp</h3>
+                <p>Become a web developer with comprehensive training in HTML, CSS, JavaScript, and modern frameworks like React and Angular.</p>
+                <a href="course.html"><button>Enroll Now</button></a>
+            </div>
+            <!-- Course 3 -->
+            <div class="card">
+                <img src="images/python.png" alt="Course 3">
+                <h3>Python for Data Science</h3>
+                <p>Learn Python programming and its applications in data science, including data analysis, visualization, and machine learning.</p>
+                <a href="Courses/python.html"><button>Enroll Now</button></a>
+            </div>
+            <!-- Course 4 -->
+            <div class="card">
+                <img src="images/cybersecurity.gif" alt="Course 4">
+                <h3>Cybersecurity Fundamentals</h3>
+                <p>Explore cybersecurity basics, ethical hacking techniques, and methods to protect systems against cyber threats.</p>
+                <a href="Courses/cyber.html"><button>Enroll Now</button></a>
+            </div>
+            <!-- Course 5 -->
+            <div class="card">
+                <img src="images/artificial-intelligence.gif" alt="Course 5">
+                <h3>Artificial Intelligence & Machine Learning</h3>
+                <p>Understand AI concepts, neural networks, and machine learning algorithms to solve real-world problems.</p>
+                <a href="Courses/ai.html"><button>Enroll Now</button></a>
+            </div>
+            <!-- Course 6 -->
+            <div class="card">
+                <img src="images/hard-drive.gif" alt="Course 6">
+                <h3>Cloud Computing Essentials</h3>
+                <p>Learn the fundamentals of cloud services like AWS, Azure, and Google Cloud for building scalable applications.</p>
+                <a href="Courses/cloud.html"><button>Enroll Now</button></a>
+            </div>
+            <!-- Course 7 -->
+            <div class="card">
+                <img src="images/app-development.png" alt="Course 7">
+                <h3>Mobile App Development</h3>
+                <p>Build native and cross-platform mobile applications using technologies like Flutter, React Native, and Kotlin.</p>
+                <a href="Courses/app.html"><button>Enroll Now</button></a>
+            </div>
+            <!-- Course 8 -->
+            <div class="card">
+                <img src="images/database-management.png" alt="Course 8">
+                <h3>Database Management Systems</h3>
+                <p>Master database concepts, SQL queries, and advanced database optimization techniques for managing data efficiently.</p>
+                <a href="Courses/database.html"><button>Enroll Now</button></a>
+            </div>
+        </div>
+
+        <!-- Promotional Banner -->
+        <div class="promo-banner">
+           Thank You For Chosing We Launch Couses For Students Very Soon  😊
+        </div>
+    </div>
+
+
+  <!-- Footer Menu -->
+  <footer>
+    <div class="menu-item" onclick="navigateTo('home')">
+      <i class="fa fa-home"></i>
+      <span>Home</span>
+    </div>
+    <div class="menu-item">
+      <i class="fa fa-info-circle"></i>
+      <a href="about.html"><span>About</span></a>
+    </div>
+    <div class="menu-item">
+      <i class="fa fa-envelope"></i>
+      <a href="contact.html"><span>Contact</span></a>
+    </div>
+    <div class="menu-item">
+      <i class="fa fa-user"></i>
+      <a href="user.html"><span>Account</span></a>
+    </div>
+  </footer>
+
+  <script>
+    // Function to filter courses based on search input
+    function filterCourses() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const cards = document.getElementsByClassName('card');
+      Array.from(cards).forEach((card) => {
+        const title = card.getElementsByTagName('h3')[0].innerText.toLowerCase();
+        if (title.includes(input)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Function for navigation
+    function navigateTo(page) {
+      alert(`Navigating to ${page.charAt(0).toUpperCase() + page.slice(1)} page.`);
+    }
+  </script>
+</body>
+
+</html>
