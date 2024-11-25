@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTraps Online Course Registration</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e9f5fc;
+            font-family: 'Arial', sans-serif;
+        }
+        .registration-form {
+            max-width: 650px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+        .form-illustration {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-illustration img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .btn-primary {
+            background-color: #3b82f6;
+            border-color: #3b82f6;
+        }
+        .btn-primary:hover {
+            background-color: #265cc4;
+            border-color: #265cc4;
+        }
+        .form-label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="registration-form">
+            <div class="form-illustration">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/new-user-registration-illustration-download-in-svg-png-gif-file-formats--path-logo-process-sign-up-pack-interface-illustrations-9058889.png?f=webp" alt="Online Learning Illustration">
+            </div>
+            <h2 class="form-title">Register for a Course</h2>
+            <form id="registrationForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="course" class="form-label">Select Course</label>
+                    <select class="form-select" id="course" required>
+                        <option value="" selected disabled>Choose a course</option>
+                        <option value="web-development">Web Development</option>
+                        <option value="data-science">Data Science</option>
+                        <option value="cyber-security">Cyber Security</option>
+                        <option value="artificial-intelligence">Artificial Intelligence</option>
+                        <option value="cloud-computing">Cloud Computing</option>
+                        <option value="mobile-app-development">Mobile App Development</option>
+                        <option value="blockchain-technology">Blockchain Technology</option>
+                        <option value="game-development">Game Development</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById("registrationForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form from submitting
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const course = document.getElementById("course").value;
+
+            if (name && email && course) {
+                alert(`Registration Successful!\nName: ${name}\nEmail: ${email}\nCourse: ${course}`);
+            } else {
+                alert("Please fill out all fields!");
+            }
+        });
+    </script>
+</body>
+</html>
