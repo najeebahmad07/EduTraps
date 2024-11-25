@@ -78,18 +78,20 @@
                 <img src="https://cdni.iconscout.com/illustration/premium/thumb/new-user-registration-illustration-download-in-svg-png-gif-file-formats--path-logo-process-sign-up-pack-interface-illustrations-9058889.png?f=webp" alt="Online Learning Illustration">
             </div>
             <h2 class="form-title">Register for a Course</h2>
-            <form id="registrationForm">
+           <form action="https://api.web3forms.com/submit" method="POST" id="registrationForm">
+           <input type="hidden" name="access_key" value="227b5c77-0527-4e3d-8a68-fe0470838df7">
+           
                 <div class="mb-3">
                     <label for="name" class="form-label">Full Name</label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter your name" required>
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email Address</label>
-                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
                 </div>
                 <div class="mb-3">
                     <label for="course" class="form-label">Select Course</label>
-                    <select class="form-select" id="course" required>
+                    <select class="form-select" id="course" name="course" required>
                         <option value="" selected disabled>Choose a course</option>
                         <option value="web-development">Web Development</option>
                         <option value="data-science">Data Science</option>
@@ -103,7 +105,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Create a password" required>
                 </div>
                 <div class="d-grid">
                     <button type="submit" class="btn btn-primary">Register</button>
