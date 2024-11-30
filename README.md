@@ -59,14 +59,10 @@ EduTraps is built with a vision to provide an easy-to-use platform where student
 
 ## **Screenshots**
 
-### **Course Listing**  
-![Course Listing](https://via.placeholder.com/800x400?text=Course+Listing)  
-
-### **Course Details**  
-![Course Details](https://via.placeholder.com/800x400?text=Course+Details)  
-
-### **Admission Form**  
-![Admission Form](https://via.placeholder.com/800x400?text=Admission+Form)  
+![Screenshot_20241130-121844](https://github.com/user-attachments/assets/efba827f-7885-4712-a1f2-5f58b79e5441)
+![Screenshot_20241130-121854](https://github.com/user-attachments/assets/9834ad36-85a3-431a-9a3f-4ad0f4cbbfa0)
+![Screenshot_20241130-121910](https://github.com/user-attachments/assets/e8eb6690-525d-4690-af06-eed93acb4e4c)
+![Screenshot_20241130-121915](https://github.com/user-attachments/assets/5d6cab49-d0d5-4da9-88d1-6307b4a633a0)
 
 ---
 
@@ -79,10 +75,10 @@ Download the EduTraps App to get started on your learning journey:
 ## **Developed By**  
 **NJB DEV**  
 
-- **Email**: [your-email@example.com](mailto:your-email@example.com)  
-- **GitHub Profile**: [NJB DEV on GitHub](https://github.com/your-username)  
+- **Email**: [najeeb@ultragits.com](mailto:najeeb@ultragits.com)  
+- **GitHub Profile**: [Najeeb Ahmad 07 on GitHub](https://github.com/najeebahmad07)  
 - **Blog**: [NJB DEV's Blog](https://najeebahmad07.blogspot.com/)  
 
 ---
 
-Feel free to customize the placeholders like `your-app-download-link.com` and `your-email@example.com` with your actual details. Let me know if you want to refine or add more sections!
+Feel free to customize the placeholders like `https://drive.google.com/file/d/14yL0ZS9CokLibTGgBpx_PeOauoV7_olH/view?usp=drivesdk` and `najeeb@ultragits.com` with your actual details. Let me know if you want to refine or add more sections!
