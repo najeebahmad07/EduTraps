@@ -72,7 +72,7 @@ EduTraps is built with a vision to provide an easy-to-use platform where student
 
 ## **Download the App**  
 Download the EduTraps App to get started on your learning journey:  
-**[Download EduTraps APK](https://your-app-download-link.com)**  
+**[Download EduTraps APK](https://drive.google.com/file/d/14yL0ZS9CokLibTGgBpx_PeOauoV7_olH/view?usp=drivesdk)**  
 
 ---
 
